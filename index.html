@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Tipleri</title>
+    <link type="text/css" rel="stylesheet" href="kutustyle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <div class="lang-dil">
+        <button class="dil" id="en" style="text-align: right;" onclick="chanLan('en')">EN</button>
+        <button class="dil" id="tr" style="text-align: right;" onclick="chanLan('tr')">TR</button>
+    </div>
+    <div class="all">
+        <div id="option">
+            <!-- Başlık -->
+            <div id="header">
+                <h1 class="baslik" id="blang">Metin Editörü</h1>
+            </div>
+
+            <!--Başlık Stilleri-->
+            <div class="hlist">
+                <select id="formatBlock" class="hsbutton">
+                    <option value="H1">H1</option>
+                    <option value="H2">H2</option>
+                    <option value="H3">H3</option>
+                    <option value="H4">H4</option>
+                    <option value="H5" >H5</option>
+                    <option value="H6" selected>H6</option>
+                </select>
+                <select id="fontSize"></select>
+
+                <!--Stiller-->
+                <button id="boldButton"><i class="fa-solid fa-bold"></i></button>
+                <button id="italicButton"><i class="fa-solid fa-italic"></i></button>
+                <button id="strikeButton"><i class="fa-solid fa-strikethrough"></i></button>
+
+                <!--Yaslama-->
+                <button id="leftButton"><i class="fa-solid fa-align-left"></i></button>
+                <button id="centerButton"><i class="fa-solid fa-align-center"></i></button>
+                <button id="rightButton"><i class="fa-solid fa-align-right"></i></button>
+                <button id="justifyButton"><i class="fa-solid fa-align-justify"></i></button>
+
+                <!--Geri ve ileri alma-->
+                <button id="undoButton"><i class="fa-solid fa-rotate-left"></i></button>
+                <button id="redoButton"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+
+            <!-- Renk Ayarlama -->
+            <div class="fbgcolor">
+                <input type="color" id="foreColor">
+                <label id="flang">Yazı Rengi</label>
+                <input type="color" id="backColor">
+                <label id="bglang">Arka Plan Rengi</label>
+            </div>
+        </div>
+        <!-- Metin Girişi -->
+        <div id="girismetin" contenteditable="true" style="overflow: auto;"></div>
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>

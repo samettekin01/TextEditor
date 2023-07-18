@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFD574;
+}
+.all{
+    border: 1px solid rgba(20,60,100,0.5);
+    border-radius: 10px;
+    padding: 0px 00px 20px 0px;
+    width: 100vmin;
+    margin: 0px auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 25px 50px rgba(0,0,0,0.5);
+    background-color: #DEDEDE;
+}
+
+.lang-dil{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-align: center;
+}
+
+.dil{
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+
+#header{
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgba(255, 136, 0,0.5);
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+select{
+    width: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#fontSize{
+    width: 40px;
+}
+
+select.options{
+    font-family: "Poppins", sans-serif;
+}
+
+.hlist{
+    text-align: center;
+    pading: 20px;
+}
+
+button{
+    border: none;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    padding: 2px;
+    background-color: #3399FF;
+    color: white;
+    border-radius: 5px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+    min-width: 25px;
+    min-height: 28px;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  }
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 5px #ffffff;
+  }
+
+.fbgcolor{
+    gap:10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    align-text: center;
+    margin-left: 25%;
+    margin-top: 5px;
+}
+
+#girismetin{
+    height: 50vh;
+    padding: 20px;
+    border: 2px solid rgba(20,60,100,0.5);
+    border-radius: 5px;
+    margin: 10px 20px 20px 20px;
+    background-color: #ECECEC;
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+#girismetin.selected{
+    background-color: white;
+}
