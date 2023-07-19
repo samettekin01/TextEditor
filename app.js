@@ -134,20 +134,3 @@ document.addEventListener("click", function(event) {
     handleDivDeselect.call(editableDiv);
   }
 });
-
-const contentEditableDiv = document.getElementById('girismetin');
-
-    // Div dışında tıklama olayını dinliyoruz
-    document.addEventListener('click', function(event) {
-      const targetElement = event.target;
-
-      // Tıklanan alan, seçili div içinde değilse seçili sınıfını kaldırıyoruz
-      if (targetElement !== contentEditableDiv && !contentEditableDiv.contains(targetElement)) {
-        contentEditableDiv.classList.remove('selected');
-      }
-    });
-
-    // Div içine tıklandığında seçili sınıfını ekliyoruz
-    contentEditableDiv.addEventListener('click', function() {
-      contentEditableDiv.classList.add('selected');
-    });
